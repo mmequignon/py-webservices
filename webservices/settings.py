@@ -25,7 +25,9 @@ SECRET_KEY = '+n9epr2$wb3z1c9d&*zr-sspid^c$a4y^i=@2_l*!$#lj8vbqw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "py-webservices.lxc",
+]
 
 
 # Application definition
