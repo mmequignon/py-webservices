@@ -4,6 +4,8 @@ from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
 from django.contrib.auth.models import User
 
+from .buddy_extension import BuddyExtension
+
 
 class Buddy(User):
 
@@ -14,3 +16,4 @@ class Buddy(User):
     def post_save(sender, instance=None, created=False, **kwargs):
         if created:
             Token.objects.create(user=instance)
+            BuddyExtension.objects.create(buddy=instance)
