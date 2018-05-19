@@ -2,7 +2,7 @@ from rest_framework import serializers
 from ..models import Comment
 
 
-class CommentInputSerializer(serializers.Serializer):
+class CommentInputSerializer(serializers.ModelSerializer):
     id = serializers.IntegerField(min_value=1)
 
 

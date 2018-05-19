@@ -9,4 +9,4 @@ class PostInputSerializer(serializers.Serializer):
 class PostOutputSerializer(serializers.Serializer):
     class Meta:
         model = Post
-        fields = ('id', 'buddy', 'parent', 'content', 'comment_ids')
+        fields = ('id', 'buddy', 'parent', 'content', 'comment_ids', )
