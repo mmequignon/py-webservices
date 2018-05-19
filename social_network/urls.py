@@ -13,7 +13,7 @@ router.register(r'post', PostViewSet)
 
 
 urlpatterns = [
-    #  url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(
         r'^get_auth_token/$',
         rest_framework_views.obtain_auth_token, name='get_auth_token'),
