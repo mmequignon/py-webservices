@@ -85,6 +85,7 @@ Here is a list of all of the available operations for each models
 |----------------|--------|---------------|
 | create         | POST   | model/        |
 | list           | GET    | model/        |
+| retrieve       | GET    | model/`<pk>`/ |
 | update         | PUT    | model/`<pk>`/ |
 | partial update | PATCH  | model/`<pk>`/ |
 | delete         | DELETE | model/`<pk>`/ |
