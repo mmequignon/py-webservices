@@ -81,10 +81,10 @@ curl -X POST http://py-webservices.lxc:8000/buddy/ -H 'Accept: application/json;
 
 Here is a list of all of the available operations for each models
 
-| Action         | Method | route       |
-|----------------|--------|-------------|
-| create         | POST   | model/      |
-| list           | GET    | model/      |
-| update         | PUT    | model/<pk>/ |
-| partial update | PATCH  | model/<pk>/ |
-| delete         | DELETE | model/<pk>/ |
+| Action         | Method | route         |
+|----------------|--------|---------------|
+| create         | POST   | model/        |
+| list           | GET    | model/        |
+| update         | PUT    | model/`<pk>`/ |
+| partial update | PATCH  | model/`<pk>`/ |
+| delete         | DELETE | model/`<pk>`/ |
