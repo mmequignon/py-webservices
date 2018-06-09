@@ -7,4 +7,4 @@ from ..serializers import PostOutputSerializer
 
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
-    serializer = PostOutputSerializer
+    serializer_class = PostOutputSerializer
